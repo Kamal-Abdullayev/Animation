@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.world .world-image{
+    position: absolute;
+}
+
+.world .world-image .img{
+    width: 100%;
+
+}
+
+.rocket{
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 17.5%;
+    z-index: 1;
+    animation-name: rocket-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes rocket-animation {
+    0% {
+		transform: translate(0, 0) rotate(-45deg);
+	}
+    15% {
+        transform: translate(290px, -190px) rotate(20deg);
+	}
+    30% {
+        transform: translate(640px, -90px) rotate(45deg);
+    }
+    45% {
+		transform: translate(840px,45px) rotate(77deg);
+	}
+    60% {
+        transform: translate(970px,280px) rotate(180deg);
+	}
+    75% {
+		transform: translate(180px,200px) rotate(250deg);
+	}
+    100% {
+		transform: translate(0, 0) rotate(320deg);
+	}
+}
+
+.fa-plane{
+    color: white;
+}
